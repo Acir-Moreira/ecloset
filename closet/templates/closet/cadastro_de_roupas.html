@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Roupas - eCloset</title>
+    <link rel="stylesheet" href="{% static 'css/cadastro_de_roupas.css' %}">
+</head>
+
+<body>
+    <h1>Cadastro de Roupas - eCloset</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required><br>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione o tipo</option>
+            <option value="calçado">Calçado</option>
+            <option value="calça">Calça</option>
+            <option value="blusa">Blusa</option>
+            <option value="camiseta">Camiseta</option>
+            <option value="suéter">Suéter</option>
+            <option value="casaco">Casaco</option>
+            <option value="bolsa">Bolsa</option>
+            <option value="camisa">Camisa</option>
+            <option value="vestido">Vestido</option>
+            <option value="saia">Saia</option>
+            <option value="moleton">Moleton</option>
+            <option value="jardineira">Jardineira</option>
+            <option value="meia-calça">Meia-calça</option>
+            <option value="acessório">Acessório</option>
+        </select><br>
+
+        <label for="função">Função:</label>
+        <select id="função" name="função" required>
+            <option value="">Selecione a função</option>
+            <option value="festa">Festa</option>
+            <option value="formal">Formal</option>
+            <option value="dia-a-dia">Dia a dia</option>
+            <option value="noite">Noite</option>
+            <option value="dia">Dia</option>
+            <option value="frio">Frio</option>
+            <option value="calor">Calor</option>
+            <option value="trabalho">Trabalho</option>
+            <option value="praia">Praia</option>
+            <option value="parque">Parque</option>
+            <option value="esporte">Esporte</option>
+        </select><br>
+
+        <label for="estilo">Estilo:</label>
+        <select id="estilo" name="estilo" required>
+            <option value="">Selecione o estilo</option>
+            <option value="tradicional">Tradicional</option>
+            <option value="elegante">Elegante</option>
+            <option value="esportivo">Esportivo</option>
+            <option value="criativo">Criativo</option>
+            <option value="romântico">Romântico</option>
+            <option value="sensual">Sensual</option>
+            <option value="urbano">Urbano</option>
+        </select><br>
+
+        <label for="cor">Cor:</label>
+        <select id="cor" name="cor" required>
+            <option value="" disabled selected>Selecione a cor</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Preto">Preto</option>
+            <option value="Branco">Branco</option>
+            <option value="Cinza">Cinza</option>
+            <option value="Bege">Bege</option>
+            <option value="Rosa">Rosa</option>
+        </select><br>
+
+        <label for="estacao">Estação:</label>
+        <select id="estacao" name="estacao" required>
+            <option value="" disabled selected>Selecione a estação</option>
+            <option value="Outono">Outono</option>
+            <option value="Inverno">Inverno</option>
+            <option value="Primavera">Primavera</option>
+            <option value="Verão">Verão</option>
+            <option value="Meia Estação">Meia Estação</option>
+            <option value="Frio">Frio</option>
+            <option value="Quente">Quente</option>
+        </select>
+        <br>
+
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho" name="tamanho" required>
+            <option value="" disabled selected>Selecione o tamanho</option>
+            <option value="PP">PP</option>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="EGG">EGG</option>
+        </select>
+        <br>
+
+        <label for="tecido">Tecido:</label>
+        <select id="tecido" name="tecido" required>
+            <option value="" disabled selected>Selecione o tecido</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Crepe">Crepe</option>
+            <option value="Lã">Lã</option>
+            <option value="Malha">Malha</option>
+            <option value="Seda">Seda</option>
+            <option value="Linho">Linho</option>
+            <option value="Algodão">Algodão</option>
+        </select>
+        <br>
+
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca" required>
+            <option value="" disabled selected>Selecione a marca</option>
+            <option value="Nike">Nike</option>
+            <option value="Zara">Zara</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Louis Vuitton">Louis Vuitton</option>
+            <option value="Chanel">Chanel</option>
+            <option value="Levis">Levis</option>
+            <option value="Vans">Vans</option>
+            <option value="Reebok">Reebok</option>
+            <option value="Fila">Fila</option>
+            <option value="Gap">Gap</option>
+            <option value="C&A">C&A</option>
+        </select>
+        <br>
+
+        <label for="favorito">Favorito:</label>
+        <input type="checkbox" id="favorito" name="favorito" value="Sim">
+        <br>
+
+        <label for="data-compra">Data de Compra:</label>
+        <input type="date" id="data-compra" name="data-compra" required>
+        <br>
+
+        <label for="ultima-data-uso">Última Data de Uso:</label>
+        <input type="date" id="ultima-data-uso" name="ultima-data-uso" required>
+        <br>
+
+        <label for="quantas-vezes">Quantas vezes:</label>
+        <input type="number" id="quantas-vezes" name="quantas-vezes" min="0" required>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

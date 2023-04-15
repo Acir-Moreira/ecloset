@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - eCloset</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="" method="POST">
+            <h2>eCloset - Fazer Login</h2>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Lembrar-me</label>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+            <p>Não tem uma conta? <a href="{% url 'login_form' %}">Registre-se</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 eCloset. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

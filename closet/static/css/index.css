@@ -1,0 +1,262 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li a {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #4285f4;
+}
+
+/* Banner */
+.banner {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #4285f4;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-products h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+/* About us */
+.about-us {
+    padding: 40px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.featured-products h3 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 300px;
+    margin: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product h4 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.product p.price {
+    font-size: 20px;
+    color: #337ab7;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #337ab7;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 36px;
+    }
+
+    .featured-products h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .product {
+        width: 90%;
+        margin: 30px 0;
+    }
+}
