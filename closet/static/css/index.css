@@ -158,10 +158,11 @@ header nav ul li a:hover {
 }
 
 .about-us p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     color: #333;
     margin-bottom: 30px;
+    justify-content: left;
 }
 
 /* Featured Products */

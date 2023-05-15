@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from closet.views import create
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('closet.urls')),
+    # path('create/', create),
+    # path('store/', store),
 ]

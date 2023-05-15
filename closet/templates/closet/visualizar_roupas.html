@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualizar Roupas</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/roupas.css' %}">
+</head>
+<body>
+    <header class="header">
+		<a href="{% url 'index' %}">Início</a>
+		<a href="{% url 'login' %}">Login</a>
+		<a href="{% url 'login_form' %}">Cadastro</a>
+		<a href="{% url 'index' %}">Sobre nós</a>
+	</header>
+	<div class="cabecalho">
+		<h1>Visualizar Roupas</h1>
+    </div>
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Roupa</th>
+					<th>Foto</th>
+					<th>Tipo</th>
+					<th>Função</th>
+					<th>Estilo</th>
+					<th>Cor</th>
+					<th>Estação</th>
+					<th>Tamanho</th>
+					<th>Tecido</th>
+					<th>Marca</th>
+					<th>Favorito</th>
+					<th>Data de Compra</th>
+					<th>Última data de uso</th>
+					<th>Quantas vezes foi utilizado</th>
+				</tr>
+			</thead>
+			<tbody>
+                <tr>
+                    <td>Vestido</td>
+                    <td><a href="#">Visualizar</a></td>
+                    <td>Vestido</td>
+                    <td>Passeio</td>
+                    <td>Moderno</td>
+                    <td>Preto</td>
+                    <td>Inverno</td>
+                    <td>M</td>
+                    <td>Algodão</td>
+                    <td>C&amp;A</td>
+                    <td>Sim</td>
+                    <td>10/01/2023</td>
+                    <td>15/03/2023</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Camiseta</td>
+                    <td><a href="#">Visualizar</a></td>
+                    <td>Camiseta</td>
+                    <td>Passeio</td>
+                    <td>Retrô</td>
+                    <td>Amarelo</td>
+                    <td>Verão</td>
+                    <td>M</td>
+                    <td>Algodão</td>
+                    <td>Renner</td>
+                    <td>Não</td>
+                    <td>14/02/2023</td>
+                    <td>20/04/2023</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Calça</td>
+                    <td><a href="#">Visualizar</a></td>
+                    <td>Calça</td>
+                    <td>Trabalho</td>
+                    <td>Casual</td>
+                    <td>Azul</td>
+                    <td>Outono</td>
+                    <td>M</td>
+                    <td>Jeans</td>
+                    <td>Lacoste</td>
+                    <td>Sim</td>
+                    <td>19/01/2023</td>
+                    <td>15/04/2023</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td>Shorts</td>
+                    <td><a href="#">Visualizar</a></td>
+                    <td>Shorts</td>
+                    <td>Pijama</td>
+                    <td>Casual</td>
+                    <td>Verde</td>
+                    <td>Verão</td>
+                    <td>M</td>
+                    <td>Algodão</td>
+                    <td>C&amp;A</td>
+                    <td>Não</td>
+                    <td>10/01/2023</td>
+                    <td>15/03/2023</td>
+                    <td>3</td>
+                  </tr>
+			</tbody>
+		</table>
+	</main>
+    <footer class="footer">
+		<p>Todos os direitos reservados &copy; eCloset 2023</p>
+	</footer>
+</body>
+</html>

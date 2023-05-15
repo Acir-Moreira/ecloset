@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eCloset - Menu de Cadastros</title>
+	<link rel="stylesheet" href="{% static 'css/cadastro-menu.css' %}">
+</head>
+<body>
+	<header class="header">
+		<a href="{% url 'index' %}">Início</a>
+		<a href="{% url 'login' %}">Login</a>
+		<a href="{% url 'login_form' %}">Cadastro</a>
+		<a href="#">Sobre nós</a>
+	</header>
+	<nav class="menu">
+        <a href="{% url 'cadastro_de_roupas' %}">Roupas</a>
+		<a href="{% url 'login_form' %}">Usuário</a>
+		<a href="{% url 'cadastro_tipos' %}">Tipos</a>
+		<a href="{% url 'cores' %}">Cores</a>
+		<a href="{% url 'marcas' %}">Marcas</a>
+		<a href="{% url 'estacao' %}">Estação</a>
+		<a href="{% url 'tecidos' %}">Tecidos</a>
+		<a href="{% url 'estilos' %}">Estilos</a>
+		<a href="{% url 'tamanhos' %}">Tamanhos</a>
+		<a href="{% url 'funcoes' %}">Funções</a>
+        <a class="logout" href="#">Logout</a>
+        <a href="{% url 'menu' %}">Voltar</a>
+	</nav>
+	<footer class="footer">
+		<p>Todos os direitos reservados &copy; eCloset 2023</p>
+	</footer>
+</body>
+</html>

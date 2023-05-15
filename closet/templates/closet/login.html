@@ -9,10 +9,19 @@
     <title>Login - eCloset</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
-
+<header>
+    <h1>eCloset</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
 <body>
     <div class="login-container">
-        <form action="" method="POST">
+        <form method="POST">
+            {% csrf_token %}
             <h2>eCloset - Fazer Login</h2>
             <div class="input-group">
                 <label for="email">E-mail</label>
@@ -26,7 +35,7 @@
                 <input type="checkbox" id="remember-me" name="remember-me">
                 <label for="remember-me">Lembrar-me</label>
             </div>
-            <button type="submit" class="btn">Entrar</button>
+            <button action="{% url 'cadastrar_usuario' %}" type="submit" class="btn">Entrar</button>
             <p>Não tem uma conta? <a href="{% url 'login_form' %}">Registre-se</a></p>
         </form>
     </div>

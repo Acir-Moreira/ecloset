@@ -11,6 +11,46 @@ body {
     color: #333;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0077c2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077c2;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #0077c2;
+}
+
 h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -56,7 +96,7 @@ input[type="file"] {
     margin-top: 0.5rem;
 }
 
-button[type="submit"] {
+.botao {
     margin-top: 1rem;
     background-color: #0077be;
     color: #fff;
@@ -67,7 +107,7 @@ button[type="submit"] {
     font-size: 1rem;
 }
 
-button[type="submit"]:hover {
+.botao :hover {
     background-color: #005a8c;
 }
 
@@ -97,7 +137,15 @@ select option {
     background-color: #f7f7f7;
 }
 
-button[type="submit"] {
-    background-color: #0077be;
-    color: #fff;
+footer {
+    background-color: #0077c2;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
